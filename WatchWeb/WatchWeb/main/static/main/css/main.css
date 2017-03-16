@@ -1,3 +1,11 @@
-body {
-	background: lightgray;
+#distance {
+	margin: auto 90px;
+}
+.map-p, .map-p a{
+	line-height: 16px;
+	letter-spacing: 2px;
+	font-size: 14px;
+	margin: 15px 0px;
+	direction: rtl;
+	color: #888888;
 }

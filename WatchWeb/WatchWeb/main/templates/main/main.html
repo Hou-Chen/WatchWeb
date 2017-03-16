@@ -1,16 +1,37 @@
 <!doctype html>
+{% extends "main/base.html" %}
 {% load staticfiles %}
-<html>
-<head>
-<title>程式語言小百科</title>
-<meta charset=utf-8>
-<link rel=stylesheet href={% static 'main/css/main.css' %}>
-</head>
-<body>
-<h1>Django 說--Hello World!</h1>
-<p>{{link}}</p>
-<p>現在時間：{{now}}</p>
-<p><a href={% url 'main:about' %}>關於</a></p>
-<p><a href={% url 'wiki:wiki' %}>程式百科</a></p>
-</body>
-</html>
+{% block heading %}<link rel=stylesheet href={% static 'main/css/main.css' %}>{% endblock %}
+{% block content %}
+<div id="distance">
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <p>****************************************************************************************************************</p>
+    <hr size="2" color="#d0d0d0">
+    <div class="map-p">    
+        <iframe src="http://www.dr2ooo.com/tools/maps/maps.php?zoom=19&width=400&height=250&ll=25.034177,-238.503633&ctrl=true&cp=true&" width="400" height="250" frameborder="0"></iframe>
+        <p><a class="a" href="https://www.google.com.tw/maps/place/108%E5%8F%B0%E5%8C%97%E5%B8%82%E8%90%AC%E8%8F%AF%E5%8D%80%E5%A4%A7%E7%90%86%E8%A1%97157%E8%99%9F/@25.0341822,121.4941709,17z/data=!3m1!4b1!4m5!3m4!1s0x3442a9add271fd51:0xbe6782819da609d5!8m2!3d25.0341774!4d121.4963649" target="_blank">台北市萬華區大里街157號-15</a></p>
+        <p>Tel：0909-819-817</p>
+    </div>
+</div>
+{% endblock %}
