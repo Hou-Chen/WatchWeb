@@ -3,4 +3,9 @@
 {% load staticfiles %}
 {% block heading %}<link rel=stylesheet href={% static 'main/css/email.css' %}>{% endblock %}
 {% block content %}
+<form method="POST" action="mailto:a40208s@gmail.com?subject=mail" Enctype="text/plain">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <input type="submit" />
+</form>
 {% endblock %}

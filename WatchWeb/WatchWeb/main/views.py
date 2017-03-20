@@ -1,10 +1,9 @@
+from django import forms
 from django.shortcuts import render
-#import datetime
+from django.http import HttpResponseRedirect
 
 def main(request):
     return render(request, 'main/main.html')
-def email(request):
-    return render(request, 'main/email.html')
 def ARMANI(request):
     return render(request, 'main/ARMANI.html')
 def SEIKO(request):
@@ -37,3 +36,18 @@ def PANERAI(request):
     return render(request, 'main/PANERAI.html')
 def TISSOT(request):
     return render(request, 'main/TISSOT.html')
+
+
+class EmailForm(forms.Form):
+    Email = forms.EmailField()
+
+
+def email(request):
+    if request.method == 'POST':
+        form = EmailForm(request.POST)
+        if form.is_valid():
+            new_email = form.save()
+            return HttpResponseRedirect('/email/' + str(new_email.pk))
+        
+    form = EmailForm()
+    return render(request, 'main/email.html', {'form' : form})

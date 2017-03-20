@@ -8,30 +8,35 @@ a {
 }
 /*******************************************/
 #div1 {
+    /*width: 62.5%;*/
     width: 1200px;
     margin: 0px auto;
 }
 /*******************************************/
-#div2 {
+#header {
     width: 100%;
     height: 90px;
     background: #11A18A;
     margin-bottom: 10px;
 }
-#div2 h1 a {
+#header h1 a {
 	float: left;
+    padding-left: 10px;
 	line-height: 90px;
 	color: white;
 }
-#div2 p {
-	margin: 0px 10px 10px 0px;
-	line-height: 20px;
+#header p {
+	font-size: 1em;
+	/*margin: 0px 10px 10px 0px;*/
+	/*line-height: 20px;*/
+	margin: 0px 10px 11px 0px;
+	line-height: 0.85em;
 	letter-spacing: 6px;
 	direction: rtl;
 	color: white;
 }
 /*******************************************/
-#div3 {
+#nav {
 	width: 210px;
 	float: left;
     font-size: 18px;
@@ -39,37 +44,38 @@ a {
     margin-top: 10px;
     margin-right: 10px;
 }
-#div3 ul li{
+#nav ul li{
     list-style-type: none;
 	position: relative;
-	border: 2px solid white;
+	border: 1px solid white;
+	margin-bottom: 1px;
 	border-radius: 15px;
 	background: #729fcf;
 }
-#div3 ul li a {
+#nav ul li a {
 	color: white;
     display: block;	
     text-align: center;
 }
-#div3 ul li:hover {
+#nav ul li:hover {
 	background: skyblue;
 }
-#div3 ul li ul {
+#nav ul li ul {
 	display: none;
 }
-#div3 ul li:hover ul.class1 {
+#nav ul li:hover ul.class1 {
     display: block;
     position: absolute;
 }
-#div3 ul li ul.class1 {
+#nav ul li ul.class1 {
 	left: 100%;
 	top: 0px;
 }
-#div3 ul li ul li {
+#nav ul li ul li {
 	width: 200px;
 }
 /*******************************************/
-#div4 {
+#article {
 	width: 968px;
 	float: right;
 	margin-top: 10px;
