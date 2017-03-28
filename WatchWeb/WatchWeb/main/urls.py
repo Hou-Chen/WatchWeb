@@ -8,6 +8,7 @@ urlpatterns = [
     url(r'^SEIKO/', views.SEIKO, name='SEIKO'),
     url(r'^CHOPARD/', views.CHOPARD, name='CHOPARD'),
     url(r'^IWC/', views.IWC, name='IWC'),
+    url(r'^IWC_0321/', views.IWC_0321, name='IWC_0321'),
     url(r'^CITIZEN/', views.CITIZEN, name='CITIZEN'),
     url(r'^HAMILTON/', views.HAMILTON, name='HAMILTON'),
     url(r'^MIDO/', views.MIDO, name='MIDO'),

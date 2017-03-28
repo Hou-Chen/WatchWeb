@@ -26,6 +26,7 @@ SECRET_KEY = ')wth3=h1oo*er137a=6c_%if*j$qy%o+05gvplb*ay_f5ezui$'
 DEBUG = True
 
 ALLOWED_HOSTS = []
+#EMAIL_HOST_PASSWORD = 'ohva kngw hcvt cfhp'
 # Application definition
 
 INSTALLED_APPS = [

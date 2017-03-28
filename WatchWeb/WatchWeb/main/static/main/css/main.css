@@ -3,14 +3,22 @@ body {
 	background-size: cover;
 	background-attachment: fixed;
 }
-#distance {
-	margin: auto 90px;
-}
-.map-p, .map-p a{
-	line-height: 16px;
-	letter-spacing: 2px;
-	font-size: 14px;
-	margin: 15px 0px;
+.map .mp{
+	margin-top: 15px;
 	direction: rtl;
-	color: #888888;
 }
+div.map div.mp img {
+	position: absolute;
+	z-index: -1;
+	max-width: 100%;
+}
+.p {
+    line-height: 20px;
+    letter-spacing: 2px;
+    font-size: 14px;
+    padding: 235px 80px 0px 0px;
+}
+
+
+
+

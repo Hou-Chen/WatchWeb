@@ -1,53 +1,42 @@
-from django import forms
 from django.shortcuts import render
-from django.http import HttpResponseRedirect
+import smtplib
+from smtplib import toaddrs, server
 
 def main(request):
     return render(request, 'main/main.html')
 def ARMANI(request):
-    return render(request, 'main/ARMANI.html')
+    return render(request, 'main/ARMANI/ARMANI.html')
 def SEIKO(request):
-    return render(request, 'main/SEIKO.html')
+    return render(request, 'main/SEIKO/SEIKO.html')
 def CHOPARD(request):
-    return render(request, 'main/CHOPARD.html')
+    return render(request, 'main/CHOPARD/CHOPARD.html')
 def IWC(request):
-    return render(request, 'main/IWC.html')
+    return render(request, 'main/IWC/IWC.html')
+def IWC_0321(request):
+    return render(request, 'main/IWC/IWC_0321.html')
 def CITIZEN(request):
-    return render(request, 'main/CITIZEN.html')
+    return render(request, 'main/CITIZEN/CITIZEN.html')
 def HAMILTON(request):
-    return render(request, 'main/HAMILTON.html')
+    return render(request, 'main/HAMILTON/HAMILTON.html')
 def MIDO(request):
-    return render(request, 'main/MIDO.html')
+    return render(request, 'main/MIDO/MIDO.html')
 def TAGHeuer(request):
-    return render(request, 'main/TAGHeuer.html')
+    return render(request, 'main/TAGHeuer/TAGHeuer.html')
 def Omega(request):
-    return render(request, 'main/Omega.html')
+    return render(request, 'main/Omega/Omega.html')
 def LONGINES(request):
-    return render(request, 'main/LONGINES.html')
+    return render(request, 'main/LONGINES/LONGINES.html')
 def Fossil(request):
-    return render(request, 'main/Fossil.html')
+    return render(request, 'main/Fossil/Fossil.html')
 def DanielWellington(request):
-    return render(request, 'main/DanielWellington.html')
+    return render(request, 'main/DanielWellington/DanielWellington.html')
 def ROLEX(request):
-    return render(request, 'main/ROLEX.html')
+    return render(request, 'main/ROLEX/ROLEX.html')
 def ORIS(request):
-    return render(request, 'main/ORIS.html')                         
+    return render(request, 'main/ORIS/ORIS.html')                         
 def PANERAI(request):
-    return render(request, 'main/PANERAI.html')
+    return render(request, 'main/PANERAI/PANERAI.html')
 def TISSOT(request):
-    return render(request, 'main/TISSOT.html')
-
-
-class EmailForm(forms.Form):
-    Email = forms.EmailField()
-
-
+    return render(request, 'main/TISSOT/TISSOT.html')
 def email(request):
-    if request.method == 'POST':
-        form = EmailForm(request.POST)
-        if form.is_valid():
-            new_email = form.save()
-            return HttpResponseRedirect('/email/' + str(new_email.pk))
-        
-    form = EmailForm()
-    return render(request, 'main/email.html', {'form' : form})
+    return render(request, 'main/email.html')

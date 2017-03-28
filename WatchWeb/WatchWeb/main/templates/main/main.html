@@ -3,104 +3,42 @@
 {% load staticfiles %}
 {% block heading %}<link rel=stylesheet href={% static 'main/css/main.css' %}>{% endblock %}
 {% block content %}
-<div id="distance">
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
+<style>
+@media only screen and (min-width: 471px) {
+    .sp {
+        display: none;
+    }
+}
+@media only screen and (max-width: 470px) {
+    .p {display: none;}
+    div.map div.mp img {
+       position: relative;
+       z-index: 0;
+    }
+    .sp {display:block;text-align:center;}
+}
+    
+</style>
+<div>
+    <h1>The City</h1>
+    <p>Chania is the capital of the Chania region on the island of Crete. The city can be divided in two parts, the old town and the modern city.</p>
     <hr size="2" color="#d0d0d0">
-    <div class="map-p">    
-        <iframe src="http://www.dr2ooo.com/tools/maps/maps.php?zoom=19&width=400&height=250&ll=25.034177,-238.503633&ctrl=true&cp=true&" width="400" height="250" frameborder="0"></iframe>
-        <p><a class="a" href="https://www.google.com.tw/maps/place/108%E5%8F%B0%E5%8C%97%E5%B8%82%E8%90%AC%E8%8F%AF%E5%8D%80%E5%A4%A7%E7%90%86%E8%A1%97157%E8%99%9F/@25.0341822,121.4941709,17z/data=!3m1!4b1!4m5!3m4!1s0x3442a9add271fd51:0xbe6782819da609d5!8m2!3d25.0341774!4d121.4963649" target="_blank">台北市萬華區大里街157號-15</a></p>
-        <p>Tel：0909-819-817</p>
+    <div class="map">
+        <div class="mp"">
+            <img src={% static 'main/img/googlemap1.jpg' %} width="480">
+            <div class="p">
+                <p><span style="background-color:white;">正時鐘錶維修中心<br>
+                0909-819-817<br>
+                <a style="color:#444;" class="a" href="https://www.google.com.tw/maps/place/108%E5%8F%B0%E5%8C%97%E5%B8%82%E8%90%AC%E8%8F%AF%E5%8D%80%E5%A4%A7%E7%90%86%E8%A1%97157%E8%99%9F/@25.0341822,121.4941709,17z/data=!3m1!4b1!4m5!3m4!1s0x3442a9add271fd51:0xbe6782819da609d5!8m2!3d25.0341774!4d121.4963649" target="_blank">台北市萬華區大里街157號-15</a>
+                </span></p>
+            </div>
+            <div class="sp">
+                <p>正時鐘錶維修中心<br>
+                0909-819-817<br>
+                <a style="color:#444;" class="a" href="https://www.google.com.tw/maps/place/108%E5%8F%B0%E5%8C%97%E5%B8%82%E8%90%AC%E8%8F%AF%E5%8D%80%E5%A4%A7%E7%90%86%E8%A1%97157%E8%99%9F/@25.0341822,121.4941709,17z/data=!3m1!4b1!4m5!3m4!1s0x3442a9add271fd51:0xbe6782819da609d5!8m2!3d25.0341774!4d121.4963649" target="_blank">台北市萬華區大里街157號-15</a>
+                </p>
+            </div>    
+        </div>
     </div>
 </div>
 {% endblock %}

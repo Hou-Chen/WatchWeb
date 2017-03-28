@@ -6,6 +6,10 @@
 <form method="POST" action="mailto:a40208s@gmail.com?subject=mail" Enctype="text/plain">
     {% csrf_token %}
     {{ form.as_p }}
-    <input type="submit" />
+    To:正時鐘錶維修中心<br>
+    From：<input type="text" name="emads" maxlength="80"><br>
+    Tel: <input type="text" name="tel" maxlength="30>"><br>
+    <input type="textarea" name="msg" >
+    <input type="submit" name="submit" value="寄信">
 </form>
 {% endblock %}

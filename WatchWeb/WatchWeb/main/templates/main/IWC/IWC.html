@@ -1,0 +1,14 @@
+<!doctype html>
+{% extends "main/base.html" %}
+{% load staticfiles %}
+{% block heading %}<link rel=stylesheet href={% static 'main/css/IWC.css' %}>{% endblock %}
+{% block content %}
+<div class="responsive">
+    <div class="gallery">
+        <a href={% url 'main:IWC_0321' %}>
+            <img src={% static 'main/img/IWC/a.jpg' %} width="300" height="200">
+            <div class="desc">故障原因:進水.無法自動上鍊</div>
+        </a>  
+    </div>
+</div>
+{% endblock %}
