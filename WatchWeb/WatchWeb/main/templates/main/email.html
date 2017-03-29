@@ -4,9 +4,9 @@
 {% block heading %}<link rel=stylesheet href={% static 'main/css/email.css' %}>{% endblock %}
 {% block content %}
 <form method="POST" action="send.php"> {% csrf_token %}
-    姓名：<br><input type="text" name="name"><br>
-    Email：<br><input type="text" name="email"><br>
-    內容：<br><textarea name="message" placeholder="" rows="10" cols="50"></textarea><br>
+    姓名：<br><input type="text" name="name" value={{name}}><br>
+    Email：<br><input type="text" name="email" value={{email}}><br>
+    內容：<br><textarea name="message" placeholder="" rows="10" cols="50">{{message}}</textarea><br>
     <input type="submit" name="submit" value="送出">
 </form>
 {% endblock %}

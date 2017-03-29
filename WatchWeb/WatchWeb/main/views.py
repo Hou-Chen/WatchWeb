@@ -1,4 +1,5 @@
 from django.shortcuts import render
+import smtplib
 
 def main(request):
     return render(request, 'main/main.html')
@@ -37,6 +38,19 @@ def PANERAI(request):
 def TISSOT(request):
     return render(request, 'main/TISSOT/TISSOT.html')
 def email(request):
+    fromaddr = 'a40208s@gmail.com'
+    toaddrs  = 'houchen691@gmail.com'
+    msg = 'Test'
+    
+    username = 'a40208s@gmail.com'
+    password = 'a941103s'
+        
+    server = smtplib.SMTP('smtp.gmail.com:587')
+    server.starttls()
+    server.login(username,password)
+    server.sendmail(fromaddr, toaddrs, msg)
+    server.quit()    
     return render(request, 'main/email.html')
+    
 
 
