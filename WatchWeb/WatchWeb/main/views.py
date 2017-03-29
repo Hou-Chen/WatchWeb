@@ -1,6 +1,4 @@
 from django.shortcuts import render
-import smtplib
-from smtplib import toaddrs, server
 
 def main(request):
     return render(request, 'main/main.html')
@@ -40,3 +38,5 @@ def TISSOT(request):
     return render(request, 'main/TISSOT/TISSOT.html')
 def email(request):
     return render(request, 'main/email.html')
+
+

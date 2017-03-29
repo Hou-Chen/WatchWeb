@@ -3,13 +3,10 @@
 {% load staticfiles %}
 {% block heading %}<link rel=stylesheet href={% static 'main/css/email.css' %}>{% endblock %}
 {% block content %}
-<form method="POST" action="mailto:a40208s@gmail.com?subject=mail" Enctype="text/plain">
-    {% csrf_token %}
-    {{ form.as_p }}
-    To:正時鐘錶維修中心<br>
-    From：<input type="text" name="emads" maxlength="80"><br>
-    Tel: <input type="text" name="tel" maxlength="30>"><br>
-    <input type="textarea" name="msg" >
-    <input type="submit" name="submit" value="寄信">
+<form method="POST" action="send.php"> {% csrf_token %}
+    姓名：<br><input type="text" name="name"><br>
+    Email：<br><input type="text" name="email"><br>
+    內容：<br><textarea name="message" placeholder="" rows="10" cols="50"></textarea><br>
+    <input type="submit" name="submit" value="送出">
 </form>
 {% endblock %}
