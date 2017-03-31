@@ -2,7 +2,7 @@ body {
 	background-color: rgba(178, 232, 232, 0.59);
 }
 div.gallery {
-    margin: 20px;
+    margin: 20px 20px 20px 10px;
     border: 1px solid #ccc;
     float: left;
     width: 180px;
@@ -22,7 +22,8 @@ div.desc {
 .responsive {
     padding: 0px;
     float: left;
-    width: 24.99999%;
+    /*width: 24.99999%;*/
+    width: 100%;
 }
 /************************************************/
 

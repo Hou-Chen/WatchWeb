@@ -143,5 +143,5 @@ a {
 /*******************************************/
 @media only screen and (min-width: 0px) {#distance {padding: 0px;}.col-17 {width: 100%;}}
 @media only screen and (min-width: 1000px) {#distance {padding: 0px 200px;}.col-17 {width: 85%;}}
-
+/*@media only screen and (min-width: 1024px) {#distance {padding: 0px 0px 0px 180px;}.col-17 {width: 85%;}}*/
 

@@ -3,7 +3,29 @@
 {% load staticfiles %}
 {% block heading %}<link rel=stylesheet href={% static 'main/css/IWC.css' %}>{% endblock %}
 {% block content %}
+<style>
+@media only screen and (max-width: 480px) {div.gallery {margin: 10px 100px 0px 100px;}}
+@media only screen and (max-width: 840px) {div.gallery {margin: 10px 10px 10px 50px;}}
+</style>
 <div class="responsive">
+    <div class="gallery">
+        <a href={% url 'main:IWC_0321' %}>
+            <img src={% static 'main/img/IWC/a.jpg' %} width="300" height="200">
+            <div class="desc">故障原因:進水.無法自動上鍊</div>
+        </a>  
+    </div>
+    <div class="gallery">
+        <a href={% url 'main:IWC_0321' %}>
+            <img src={% static 'main/img/IWC/a.jpg' %} width="300" height="200">
+            <div class="desc">故障原因:進水.無法自動上鍊</div>
+        </a>  
+    </div>
+    <div class="gallery">
+        <a href={% url 'main:IWC_0321' %}>
+            <img src={% static 'main/img/IWC/a.jpg' %} width="300" height="200">
+            <div class="desc">故障原因:進水.無法自動上鍊</div>
+        </a>  
+    </div>
     <div class="gallery">
         <a href={% url 'main:IWC_0321' %}>
             <img src={% static 'main/img/IWC/a.jpg' %} width="300" height="200">
