@@ -36,6 +36,6 @@ def ORIS(request):
 def PANERAI(request):
     return render(request, 'main/PANERAI/PANERAI.html')
 def TISSOT(request):
-    return render(request, 'main/TISSOT/TISSOT.html') 
+    return render(request, 'main/TISSOT/TISSOT.html')
 def email(request):    
     return render(request, 'main/email.html', send.send(request))
