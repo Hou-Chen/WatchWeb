@@ -4,6 +4,9 @@ from main import views
 urlpatterns = [
     url(r'^$', views.main, name='main'),
     url(r'^email/', views.email, name='email'),
+    url(r'^related/', views.related, name='related'),
+    url(r'^service/', views.service, name='service'),
+    url(r'^tool/', views.tool, name='tool'),
     url(r'^ARMANI/', views.ARMANI, name='ARMANI'),
     url(r'^SEIKO/', views.SEIKO, name='SEIKO'),
     url(r'^CHOPARD/', views.CHOPARD, name='CHOPARD'),

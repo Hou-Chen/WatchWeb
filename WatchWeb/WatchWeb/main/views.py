@@ -3,6 +3,12 @@ from main import send
 
 def main(request):
     return render(request, 'main/main.html')
+def related(request):
+    return render(request, 'main/related.html')
+def service(request):
+    return render(request, 'main/service.html')
+def tool(request):
+    return render(request, 'main/tool.html')
 def ARMANI(request):
     return render(request, 'main/ARMANI/ARMANI.html')
 def SEIKO(request):

@@ -1,7 +1,9 @@
 * {
 	margin: 0px;
 	padding: 0px;
-	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	   -moz-box-sizing: border-box;
+	        box-sizing: border-box;
 	/*border: 1px solid rgba(0, 0, 0, 0.3);*/
 }
 .row::after {
@@ -94,7 +96,8 @@ a {
 	position: relative;
 	font-size: 18px;
     margin-bottom: 7px;
-    background: url("../img/nav.jpg");
+    /*background: url("../img/nav.jpg");*/
+    background-color: #222;
     height: 35px;
     line-height: 35px;
     border: 1px solid white;
@@ -106,16 +109,16 @@ a {
     text-align: center;
 }
 #nav ul li:hover {
-	background: skyblue;
+	background: #444;
 }
 #nav ul li ul {
 	display: none;
 }
-#nav ul li:hover ul.class1 {	
+#nav ul li:hover ul {	
     display: block;
     position: absolute;
 }
-#nav ul li ul.class1 {
+#nav ul li ul {
 	left: 100%;
 	top: 0px;
 }
@@ -130,16 +133,24 @@ a {
     #nav {display: none;}
     #right {
         position: absolute;
-        right: 30px;
-        top: 35px;
+        /*right: 30px;
+        top: 35px;*/
+        top: 0px;
+        right: 0px;
+        width: 60px;
+        height: 90px;
+        line-height: 80px;
+        padding: 10px 15px;
+        margin-right: 5px;
+        cursor: pointer;
     }
     .nav {
         position: absolute;
         top: 90px;
         width: 200px;
-        /*right: 0px;*/
-        left: -100%;
-        background: rgba(0, 0, 0, 0.7);
+        /*right: 0px;
+        background: rgba(0, 0, 0, 0.7);*/
+        left: -100%;        
         background: #11A18A;
         padding: 10px;
     }
@@ -153,24 +164,36 @@ a {
     }
     .nav li a {
         color: white;
-    }    
+    }
     .nav ul li {
-        font-size: 18px;
+        font-size: 19px;
     }
     .nav ul li ul {
         display: none;
     }    
-    .nav ul li:hover ul{
+    /*.nav ul li:hover ul{
         display: block;
         position: relative;
-    }
+    }*/
     .nav ul li ul li {
-        font-size: 15px;
+        font-size: 17px;
     }
-    .nav ul li ul li:before {
+    .nav ul li ul li::before {
         content: " - ";
         color: white;
     }
+    .ja1::after, .ja2::after {
+        content: attr(data-after);
+        float: right;
+        margin-right: 20px;
+        font-size: 30px;
+        color: white;
+    }
+    .ja1:focus::after, .ja2:focus::after {
+        content: attr(data-after);
+        font-size: 30px;
+        color: white;
+    }    
 }
 @media only screen and (min-width: 601px) {
 	#right {display: none;}

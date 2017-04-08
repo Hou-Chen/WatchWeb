@@ -15,7 +15,7 @@ def send(request):
         if request.POST['name'] and request.POST['email'] and request.POST['message'] != '':
             name = request.POST['name']
             email = request.POST['email']
-            message = request.POST['message']
+            message = request.POST['message']                       
             body = name + "\n\n" + email + "\n\n" + message
             msg.attach(MIMEText(body, 'plain'))              
             server = smtplib.SMTP('smtp.gmail.com:587')

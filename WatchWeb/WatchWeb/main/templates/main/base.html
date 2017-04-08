@@ -11,11 +11,11 @@
         letter-spacing: 6px;
         text-align: right; 
         color: white;
+        padding-top: 10px;
     }
 }
 @media only screen and (max-width: 600px) {#header p {display: none;}}
 @media only screen and (max-width: 330px) {#header h1 a {font-size: 24px;}}
-
 </style>
     <head>
         <title>正時鐘錶維修中心</title>
@@ -36,19 +36,19 @@
             六(11:00am - 18:00pm)<br>
             地址：台北市萬華區大里街157號-15<br>
             Tel：0909-819-817</p>            
-            <div id="right"><a href="#"><img src={% static 'main/img/nav-icon.png' %}></a></div>
+            <div id="right"><img src={% static 'main/img/nav-icon.png' %}></div>
             <div class="nav">
             <ul>
                 <li><a href={% url 'main:email' %}>線上預約、回報</a></li>
-                <li><a href="#">維修知識</a>
-                    <ul>
-                        <li><a href="#">工具篇</a></li>
-                        <li><a href="#">相關常識</a></li>
-                        <li><a href="#">維修常識</a></li>
-                    </ul>                                                                                            
+                <li><a class="ja1" href="#">維修知識</a>
+                    <ul class="ju1">
+                        <li><a href={% url 'main:tool' %}>工具篇</a></li>
+                        <li><a href={% url 'main:related' %}>相關常識</a></li>
+                        <li><a href={% url 'main:service' %}>維修常識</a></li>
+                    </ul>                                                                                       
                 </li>
-                <li><a href="#">維修實例</a>
-                    <ul>
+                <li><a class="ja2" href="#">維修實例</a>
+                    <ul class="ju2">
                         <li><a href={% url 'main:ARMANI' %}>ARMANI 阿曼尼</a></li>
                         <li><a href={% url 'main:SEIKO' %}>SEIKO 精工錶</a></li>
                         <li><a href={% url 'main:CHOPARD' %}>CHOPARD 蕭邦</a></li>
@@ -71,19 +71,64 @@
             </div>            
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
         <script>
-        var act = 1;
+        /*$(".ja1").attr('data-after', ' + ');*/
+        $(".ja1").attr('data-after', '');
+        $(".ja2").attr('data-after', ' + ');
+        var act1 = 1;
+        var act2 = 1;
+        var act3 = 1;
         $("#right").click(function () {
-            if(act == 1){
-                $('.nav').animate({
-                    left: '0'
-                },600);
-                act = 0;
-            } 
-            else {
-                act = 1;
-                $('.nav').animate({
-                    left: '-100%'
-                        },1000);
+            if(act1 == 1)
+            {
+                $('.nav').animate
+                ({left: '0'},600);                
+                act1 = 0;
+            }
+            else 
+            {                
+                $('.nav').animate
+                ({left: '-100%'},1000);
+                $('.ju1').slideUp(500);
+                $('.ju2').slideUp(500);
+                $(".ja1").attr('data-after', ' + ');
+                $(".ja2").attr('data-after', ' + ');
+                act1 = 1;
+                act2 = 1;
+                act3 = 1;
+            }
+        });
+        $(".ja1").click(function() {            
+            $('.ju2').slideUp(500);
+            if(act2 == 1)
+            {
+            	$(this).attr('data-after', ' - ');
+                $(".ja2").attr('data-after', ' + ');
+                $('.ju1').slideDown(500);
+                act3 = 1;
+                act2 = 0;
+            }
+            else
+            {
+            	$(this).attr('data-after', ' + ');
+                $('.ju1').slideUp(500);
+                act2 = 1;
+            }
+        });
+        $(".ja2").click(function() {
+            $('.ju1').slideUp(500);
+            if(act3 == 1)
+            {
+                $('.ju2').slideDown(500);
+                $(".ja1").attr('data-after', ' + ');
+                act2 = 1;
+                act3 = 0;
+                $(this).attr('data-after', ' - ');
+            }
+            else
+            {
+                $('.ju2').slideUp(500);
+                act3 = 1;
+                $(this).attr('data-after', ' + ');
             }
         });
         </script>         
@@ -94,14 +139,14 @@
             <div id="nav" class="col-3 col-m-1" style="min-width:150px;">
                 <ul>
                     <li><a href="#">維修知識</a>
-                        <ul class="class1">
-                            <li><a href="#">工具篇</a></li>
-                            <li><a href="#">相關常識</a></li>
-                            <li><a href="#">維修常識</a></li>
-                        </ul>                                                                    
+                        <ul>
+                            <li><a href={% url 'main:tool' %}>工具篇</a></li>
+                            <li><a href={% url 'main:related' %}>相關常識</a></li>
+                            <li><a href={% url 'main:service' %}>維修常識</a></li>
+                        </ul>                                                               
                     </li>
                     <li><a href="#">維修實例</a>
-                        <ul class="class1">
+                        <ul>
                             <li><a href={% url 'main:ARMANI' %}>ARMANI 阿曼尼</a></li>
                             <li><a href={% url 'main:SEIKO' %}>SEIKO 精工錶</a></li>
                             <li><a href={% url 'main:CHOPARD' %}>CHOPARD 蕭邦</a></li>
