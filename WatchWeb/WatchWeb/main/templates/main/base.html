@@ -36,10 +36,12 @@
             六(11:00am - 18:00pm)<br>
             地址：台北市萬華區大里街157號-15<br>
             Tel：0909-819-817</p>            
-            <div id="right"><img src={% static 'main/img/nav-icon.png' %}></div>
+            
+            <div class="before" style="transition:0.5s"></div>
             <div class="nav">
             <ul>
                 <li><a href={% url 'main:email' %}>線上預約、回報</a></li>
+                <!-- <div id="right"><img src={% static 'main/img/icon/nav-icon.png' %}></div><li><a class="ja1" href="#">維修知識<img class="ja" src={% static 'main/img/icon/right_white_24.svg' %}></a> -->
                 <li><a class="ja1" href="#">維修知識</a>
                     <ul class="ju1">
                         <li><a href={% url 'main:tool' %}>工具篇</a></li>
@@ -70,70 +72,8 @@
                 </ul>
             </div>            
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-        <script>
-        /*$(".ja1").attr('data-after', ' + ');*/
-        $(".ja1").attr('data-after', '');
-        $(".ja2").attr('data-after', ' + ');
-        var act1 = 1;
-        var act2 = 1;
-        var act3 = 1;
-        $("#right").click(function () {
-            if(act1 == 1)
-            {
-                $('.nav').animate
-                ({left: '0'},600);                
-                act1 = 0;
-            }
-            else 
-            {                
-                $('.nav').animate
-                ({left: '-100%'},1000);
-                $('.ju1').slideUp(500);
-                $('.ju2').slideUp(500);
-                $(".ja1").attr('data-after', ' + ');
-                $(".ja2").attr('data-after', ' + ');
-                act1 = 1;
-                act2 = 1;
-                act3 = 1;
-            }
-        });
-        $(".ja1").click(function() {            
-            $('.ju2').slideUp(500);
-            if(act2 == 1)
-            {
-            	$(this).attr('data-after', ' - ');
-                $(".ja2").attr('data-after', ' + ');
-                $('.ju1').slideDown(500);
-                act3 = 1;
-                act2 = 0;
-            }
-            else
-            {
-            	$(this).attr('data-after', ' + ');
-                $('.ju1').slideUp(500);
-                act2 = 1;
-            }
-        });
-        $(".ja2").click(function() {
-            $('.ju1').slideUp(500);
-            if(act3 == 1)
-            {
-                $('.ju2').slideDown(500);
-                $(".ja1").attr('data-after', ' + ');
-                act2 = 1;
-                act3 = 0;
-                $(this).attr('data-after', ' - ');
-            }
-            else
-            {
-                $('.ju2').slideUp(500);
-                act3 = 1;
-                $(this).attr('data-after', ' + ');
-            }
-        });
-        </script>         
-        </div>
-        
+        <script src={% static 'main/js/base.js' %}></script>         
+        </div>        
         <hr size="2" color=#d0d0d0>
         <div class="row">
             <div id="nav" class="col-3 col-m-1" style="min-width:150px;">
