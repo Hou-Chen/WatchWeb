@@ -1,5 +1,8 @@
 body {
-    background: url("../img/2.png") no-repeat;
+    background: -webkit-linear-gradient(left top,#98dafc,#22264b);
+    background: -moz-linear-gradient(bottom right,#22264b,#98dafc);
+    background: -o-linear-gradient(bottom right,#98dafc,#22264b);
+    background: -linear-gradient(to bottom right,#98dafc,#22264b);
     background-size: cover;
     background-attachment: fixed;
 }

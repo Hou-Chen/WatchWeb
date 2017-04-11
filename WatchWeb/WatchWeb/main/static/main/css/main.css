@@ -1,14 +1,16 @@
 body {
 	/*background: url("../img/2.png") no-repeat;*/
 	/*background-color: #98dafc;*/
-	background: -webkit-linear-gradient(left top,rgba(122, 125, 160, 0.5),rgba(227, 237, 242, 0.5));
 	/*background: -webkit-radial-gradient(circle,#98dafc,#22264b);*/
+	background: -webkit-linear-gradient(left top,rgba(122, 125, 160, 0.5),rgba(227, 237, 242, 0.5));
+	background: -moz-linear-gradient(bottom right,rgba(122, 125, 160, 0.5),rgba(227, 237, 242, 0.5));
+	background: -o-linear-gradient(bottom right,rgba(122, 125, 160, 0.5),rgba(227, 237, 242, 0.5));
+	background: -linear-gradient(to bottom right,rgba(122, 125, 160, 0.5),rgba(227, 237, 242, 0.5));
 	background-size: cover;
 	background-attachment: fixed;
 }
 .map .mp{
 	margin-top: 15px;
-	direction: rtl;
 }
 div.map div.mp img {
 	position: absolute;
@@ -19,13 +21,13 @@ div.map div.mp img {
     line-height: 20px;
     letter-spacing: 2px;
     font-size: 14px;
-    padding: 235px 80px 0px 0px;
+    padding: 270px 0px 0px 220px;
 }
 .dp {
 	border: 1px solid black;
-	width: 215px;
+	width: 225px;
 	background: white;
-	text-align: right;
+	text-align: center;
 }
 .dpt {
 	font-size: 1em;

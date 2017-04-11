@@ -4,22 +4,24 @@
 {% block heading %}{% endblock %}
 <style>
 @media only screen and (max-width: 659px) {#header h1 a {width: 100%;}}
-@media only screen and (min-width: 660px) {
+@media only screen and (min-width: 700px) {
     #header p {
         font-size: 1em;
-        margin: 0px 10px 11px 32px;
+        margin: 0px 10px 0px 32px;
         letter-spacing: 6px;
         text-align: right; 
         color: white;
         padding-top: 10px;
     }
 }
-@media only screen and (max-width: 600px) {#header p {display: none;}}
+@media only screen and (max-width: 699px) {#header p {display: none;}}
 @media only screen and (max-width: 330px) {#header h1 a {font-size: 24px;}}
 </style>
     <head>
         <title>正時鐘錶維修中心</title>
-        <link rel=stylesheet href={% static 'main/css/base.css' %}>        
+        <link rel=stylesheet href={% static 'main/css/base.css' %}>
+        <link rel=stylesheet href={% static 'main/css/navigation.css' %}> 
+        <link rel=stylesheet href={% static 'main/css/navigation2.css' %}>        
         <meta charset=utf-8>
         <meta http-equiv="Content-Language" content="zh-TW">
         <meta name="description" content="">
@@ -40,8 +42,7 @@
             <div class="before" style="transition:0.5s"></div>
             <div class="nav">
             <ul>
-                <li><a href={% url 'main:email' %}>線上預約、回報</a></li>
-                <!-- <div id="right"><img src={% static 'main/img/icon/nav-icon.png' %}></div><li><a class="ja1" href="#">維修知識<img class="ja" src={% static 'main/img/icon/right_white_24.svg' %}></a> -->
+                <li><a href={% url 'main:email' %}>線上預約、回報</a></li>                
                 <li><a class="ja1" href="#">維修知識</a>
                     <ul class="ju1">
                         <li><a href={% url 'main:tool' %}>工具篇</a></li>
@@ -73,10 +74,9 @@
             </div>            
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
         <script src={% static 'main/js/base.js' %}></script>         
-        </div>        
-        
+        </div> 
         <div class="row">
-            <div id="nav" class="col-3 col-m-1" style="min-width:150px;">
+            <div id="nav" class="col-3 col-m-1">
                 <ul>
                     <li><a href="#">維修知識</a>
                         <ul>
@@ -108,7 +108,7 @@
                     <li>
                         <a href={% url 'main:email' %}>線上預約、回報</a>
                     </li>
-                </ul>                
+                </ul>      
             </div>
             <div id="distance" class="col-17 col-m-11">
                 {% block content %}{% endblock %}

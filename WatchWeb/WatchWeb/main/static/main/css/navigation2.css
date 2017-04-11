@@ -1,0 +1,73 @@
+/*screen <= 699*/
+@media only screen and (max-width: 699px) {
+	#nav {display: none;}
+	#header{background: #2C333A;}
+    .before::after {
+        content: url('../img/icon/menu_white_36.svg');
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        width: 60px;
+        height: 90px;
+        line-height: 95px;
+        padding: 10px 10px;
+        cursor: pointer;
+    }
+    .after::after {
+        content: url('../img/icon/close_white_36.svg');
+    }
+    .nav {
+        position: absolute;
+        top: 90px;
+        width: 240px;
+        left: -100%;        
+        background: #2C333A;;
+        padding: 10px;
+    }
+    .nav li {
+        list-style: none;
+        line-height: 30px;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.7);
+    }
+    .nav li:last-child {
+        border-bottom: none;
+    }
+    .nav li a {
+        color: white;
+        padding-right: 47px;
+    }
+    .nav ul li {
+        font-size: 19px;
+    }
+    .nav ul li ul {
+        display: none;
+    }
+    .nav ul li ul li {
+        font-size: 17px;
+    }
+    .nav ul li ul li::before {
+        content: " - ";
+        color: white;
+    }
+    .ja1::after, .ja2::after {
+        content: url('../img/icon/right_white_24.svg');
+        float: right;
+        margin-right: 18px;
+        font-size: 30px;
+        color: white;
+    }
+    .ja11::after, .ja22::after {
+        content: url('../img/icon/down_white_24.svg');
+    }
+    /*.ja1::after, .ja2::after {
+        content: attr(aftercontent);
+        float: right;
+        margin-right: 20px;
+        font-size: 30px;
+        color: white;
+    }*/
+}
+@media only screen and (min-width: 701px) {
+    #right {display: none;}
+    .nav {display: none;}
+}
