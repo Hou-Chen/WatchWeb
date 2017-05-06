@@ -61,9 +61,9 @@ a {
 }
 /*******************************************/
 #div1 {
-    width: 100%;
-    /*max-width: 1200px;
-    margin: 0px auto;*/
+    /*width: 100%;*/
+    max-width: 1200px;
+    margin: 0px auto;
 }
 /*******************************************/
 #header {
@@ -89,9 +89,9 @@ a {
 /*******************************************/
 #distance {height: 100%;}
 @media only screen and (min-width: 0px) {#distance {padding: 0px;}.col-17 {width: 100%;}}
-@media only screen and (min-width: 1000px) {#distance {padding: 0px 200px;}.col-17 {width: 85%;}}
+@media only screen and (min-width: 1000px) {#distance {padding: 0px 0px 0px 200px;}.col-17 {width: 84.5%;}}
 /*******************************************/
 @media only screen and (min-width: 700px) {
-	#right {display: none;}
+	/*#right {display: none;}*/
 	.nav {display: none;}
 }

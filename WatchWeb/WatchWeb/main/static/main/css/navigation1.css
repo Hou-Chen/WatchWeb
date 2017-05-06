@@ -1,0 +1,46 @@
+/*screen >= 700 <=999*/
+@media only screen and (min-width: 699px) and (max-width: 999px) {
+	#nav {display: none;}
+	#nav1 {
+	   text-align: center;
+	}
+	.cennav ul {
+	   font-size: 17px;
+	}
+	#nav1b {
+	   background-color: #5E5D5D;
+	   width: 600px;
+	   margin: 0px auto;
+	}
+	.cennav ul li {
+	   background-color: #5E5D5D;
+	   display: inline-block;
+	   padding: 15px 25px;
+	   position: relative;
+	   list-style: none;
+	}
+	.cennav ul li a{
+	   color: #D8D8D8;
+	}
+	.cennav ul li ul {
+	   display: none;
+	}
+	.cennav ul li:hover {
+	   background-color: #383838;
+	}
+	.cennav ul li:hover ul{
+	   display: block;
+	}
+	.cennav ul li ul {
+	   position: absolute;
+	   top: 100%;
+	   left: 0%;
+	}
+	.cennav ul li ul li {
+	   width: 180px;
+	   background-color: #383838
+	}
+	.cennav ul li ul li:hover {
+	   background-color: #5E5D5D;
+	}
+}

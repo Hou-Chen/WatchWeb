@@ -1,6 +1,7 @@
 /*screen <= 699*/
 @media only screen and (max-width: 699px) {
 	#nav {display: none;}
+	.cennav {display: none;}
 	#header{background: #2C333A;}
     .before::after {
         content: url('../img/icon/menu_white_36.svg');

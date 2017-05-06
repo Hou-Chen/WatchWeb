@@ -20,7 +20,8 @@
     <head>
         <title>正時鐘錶維修中心</title>
         <link rel=stylesheet href={% static 'main/css/base.css' %}>
-        <link rel=stylesheet href={% static 'main/css/navigation.css' %}> 
+        <link rel=stylesheet href={% static 'main/css/navigation.css' %}>
+        <link rel=stylesheet href={% static 'main/css/navigation1.css' %}> 
         <link rel=stylesheet href={% static 'main/css/navigation2.css' %}>        
         <meta charset=utf-8>
         <meta http-equiv="Content-Language" content="zh-TW">
@@ -37,8 +38,7 @@
             <p>營業時間：一～五(11:00am - 20:00pm)<br>
             六(11:00am - 18:00pm)<br>
             地址：台北市萬華區大里街157號-15<br>
-            Tel：0909-819-817</p>            
-            
+            Tel：0909-819-817</p>
             <div class="before" style="transition:0.5s"></div>
             <div class="nav">
             <ul>
@@ -109,6 +109,44 @@
                         <a href={% url 'main:email' %}>線上預約、回報</a>
                     </li>
                 </ul>      
+            </div>
+            <div id="nav1">
+            <div id="nav1b">
+                <nav class="cennav">
+                    <ul>
+                    <li><a href="#">維修知識</a>
+                        <ul>
+                            <li><a href={% url 'main:tool' %}>工具篇</a></li>
+                            <li><a href={% url 'main:related' %}>相關常識</a></li>
+                            <li><a href={% url 'main:service' %}>維修常識</a></li>
+                        </ul>                                                               
+                    </li>
+                    <li><a href="#">維修實例</a>
+                        <ul>
+                            <li><a href={% url 'main:ARMANI' %}>ARMANI 阿曼尼</a></li>
+                            <li><a href={% url 'main:SEIKO' %}>SEIKO 精工錶</a></li>
+                            <li><a href={% url 'main:CHOPARD' %}>CHOPARD 蕭邦</a></li>
+                            <li><a href={% url 'main:IWC' %}>IWC 萬國</a></li>
+                            <li><a href={% url 'main:CITIZEN' %}>CITIZEN 星辰</a></li>
+                            <li><a href={% url 'main:HAMILTON' %}>HAMILTON 漢米爾頓</a></li>
+                            <li><a href={% url 'main:MIDO' %}>MIDO 美度</a></li>
+                            <li><a href={% url 'main:TAGHeuer' %}>TAGHeuer 泰格豪雅</a></li>
+                            <li><a href={% url 'main:Omega' %}>Omega 亞米茄</a></li>
+                            <li><a href={% url 'main:LONGINES' %}>LONGINES 浪琴</a></li>
+                            <li><a href={% url 'main:Fossil' %}>Fossil</a></li>
+                            <li><a href={% url 'main:DanielWellington' %}>Daniel Wellington</a></li>
+                            <li><a href={% url 'main:ROLEX' %}>ROLEX 勞力士</a></li>
+                            <li><a href={% url 'main:ORIS' %}>ORIS 豪利時</a></li>                            
+                            <li><a href={% url 'main:PANERAI' %}>PANERAI 沛納海</a></li>
+                            <li><a href={% url 'main:TISSOT' %}>TISSOT 天梭</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href={% url 'main:email' %}>線上預約、回報</a>
+                    </li>
+                </ul>      
+                </nav>
+                </div>
             </div>
             <div id="distance" class="col-17 col-m-11">
                 {% block content %}{% endblock %}
