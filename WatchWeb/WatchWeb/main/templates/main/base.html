@@ -54,10 +54,8 @@
                     <ul class="ju2">
                         <li><a href={% url 'main:ARMANI' %}>ARMANI 阿曼尼</a></li>
                         <li><a href={% url 'main:SEIKO' %}>SEIKO 精工錶</a></li>
-                        <li><a href={% url 'main:CHOPARD' %}>CHOPARD 蕭邦</a></li>
                         <li><a href={% url 'main:IWC' %}>IWC 萬國</a></li>
                         <li><a href={% url 'main:CITIZEN' %}>CITIZEN 星辰</a></li>
-                        <li><a href={% url 'main:HAMILTON' %}>HAMILTON 漢米爾頓</a></li>
                         <li><a href={% url 'main:MIDO' %}>MIDO 美度</a></li>
                         <li><a href={% url 'main:TAGHeuer' %}>TAGHeuer 泰格豪雅</a></li>
                         <li><a href={% url 'main:Omega' %}>Omega 亞米茄</a></li>
@@ -68,6 +66,7 @@
                         <li><a href={% url 'main:ORIS' %}>ORIS 豪利時</a></li>                            
                         <li><a href={% url 'main:PANERAI' %}>PANERAI 沛納海</a></li>
                         <li><a href={% url 'main:TISSOT' %}>TISSOT 天梭</a></li>
+                        <li><a href={% url 'main:OTHER' %}>其他腕錶</a></li>
                     </ul>
                 </li>
                 </ul>
@@ -76,7 +75,7 @@
         <script src={% static 'main/js/base.js' %}></script>         
         </div> 
         <div class="row">
-            <div id="nav" class="col-3 col-m-1">
+            <div id="nav" class="col-4 col-m-1">
                 <ul>
                     <li><a href="#">維修知識</a>
                         <ul>
@@ -89,10 +88,8 @@
                         <ul>
                             <li><a href={% url 'main:ARMANI' %}>ARMANI 阿曼尼</a></li>
                             <li><a href={% url 'main:SEIKO' %}>SEIKO 精工錶</a></li>
-                            <li><a href={% url 'main:CHOPARD' %}>CHOPARD 蕭邦</a></li>
                             <li><a href={% url 'main:IWC' %}>IWC 萬國</a></li>
                             <li><a href={% url 'main:CITIZEN' %}>CITIZEN 星辰</a></li>
-                            <li><a href={% url 'main:HAMILTON' %}>HAMILTON 漢米爾頓</a></li>
                             <li><a href={% url 'main:MIDO' %}>MIDO 美度</a></li>
                             <li><a href={% url 'main:TAGHeuer' %}>TAGHeuer 泰格豪雅</a></li>
                             <li><a href={% url 'main:Omega' %}>Omega 亞米茄</a></li>
@@ -103,6 +100,7 @@
                             <li><a href={% url 'main:ORIS' %}>ORIS 豪利時</a></li>                            
                             <li><a href={% url 'main:PANERAI' %}>PANERAI 沛納海</a></li>
                             <li><a href={% url 'main:TISSOT' %}>TISSOT 天梭</a></li>
+                            <li><a href={% url 'main:OTHER' %}>其他腕錶</a></li>
                         </ul>
                     </li>
                     <li>
@@ -125,10 +123,8 @@
                         <ul>
                             <li><a href={% url 'main:ARMANI' %}>ARMANI 阿曼尼</a></li>
                             <li><a href={% url 'main:SEIKO' %}>SEIKO 精工錶</a></li>
-                            <li><a href={% url 'main:CHOPARD' %}>CHOPARD 蕭邦</a></li>
                             <li><a href={% url 'main:IWC' %}>IWC 萬國</a></li>
                             <li><a href={% url 'main:CITIZEN' %}>CITIZEN 星辰</a></li>
-                            <li><a href={% url 'main:HAMILTON' %}>HAMILTON 漢米爾頓</a></li>
                             <li><a href={% url 'main:MIDO' %}>MIDO 美度</a></li>
                             <li><a href={% url 'main:TAGHeuer' %}>TAGHeuer 泰格豪雅</a></li>
                             <li><a href={% url 'main:Omega' %}>Omega 亞米茄</a></li>
@@ -139,6 +135,7 @@
                             <li><a href={% url 'main:ORIS' %}>ORIS 豪利時</a></li>                            
                             <li><a href={% url 'main:PANERAI' %}>PANERAI 沛納海</a></li>
                             <li><a href={% url 'main:TISSOT' %}>TISSOT 天梭</a></li>
+                            <li><a href={% url 'main:OTHER' %}>其他腕錶</a></li>
                         </ul>
                     </li>
                     <li>
@@ -148,7 +145,7 @@
                 </nav>
                 </div>
             </div>
-            <div id="distance" class="col-17 col-m-11">
+            <div id="distance" class="col-16 col-m-11">
                 {% block content %}{% endblock %}
             </div>
         </div>

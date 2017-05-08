@@ -10,31 +10,32 @@
     list-style-type: none;
 }
 #nav li {
-    position: relative;
-    font-size: 18px;
+    /*position: relative;*/
+    font-size: 20px;
     margin-bottom: 7px;
-    height: 35px;
+    /*height: 35px;*/
     line-height: 35px;
-    border-left: 3px solid #df5a2e;
-    transition: 0.2s;
+    /*border-left: 3px solid #df5a2e;*/
+    margin-left: 40px;
+    transition: all 0.2s;
 }
 #nav ul li a {
     color: rgba(0, 0, 0, 0.7);
     display: block; 
-    text-align: center;
+    /*text-align: center;*/
 }
-#nav ul li:hover {
+/*#nav ul li:hover {
     border-left: 10px solid #df5a2e;
-}
+}*/
 #nav ul li ul {
     left: 100%;
-    display: none;
+    /*display: none;*/
     top: 0px;
 }
-#nav ul li:hover ul {   
+/*#nav ul li:hover ul {   
     display: block;
     position: absolute;
-}
+}*/
 #nav ul li ul li {
-    width: 102%;
+	font-size: 18px;
 }}
