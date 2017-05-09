@@ -1,8 +1,8 @@
 body {
-    background: -webkit-linear-gradient(left top,#98dafc,#22264b);
+    /*background: -webkit-linear-gradient(left top,#98dafc,#22264b);
     background: -moz-linear-gradient(bottom right,#22264b,#98dafc);
     background: -o-linear-gradient(bottom right,#98dafc,#22264b);
-    background: -linear-gradient(to bottom right,#98dafc,#22264b);
+    background: -linear-gradient(to bottom right,#98dafc,#22264b);*/
     background-size: cover;
     background-attachment: fixed;
 }
@@ -30,7 +30,7 @@ body {
 	padding: 15px;
 	border: none;
 	margin-bottom: 10px;
-	background-color: #ccc;
+	background-color: lightgray;
     letter-spacing: 1px;
 	color: #000;
 	font-size: 1.3em;

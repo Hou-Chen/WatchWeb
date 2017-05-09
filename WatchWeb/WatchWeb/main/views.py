@@ -23,6 +23,8 @@ def TAGHeuer(request):
     return render(request, 'main/TAGHeuer/TAGHeuer.html')
 def Omega(request):
     return render(request, 'main/Omega/Omega.html')
+def Omega_0509(request):
+    return render(request, 'main/Omega/Omega_0509.html')
 def LONGINES(request):
     return render(request, 'main/LONGINES/LONGINES.html')
 def Fossil(request):

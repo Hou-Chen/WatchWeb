@@ -89,8 +89,8 @@ a {
 }
 /*******************************************/
 #distance {height: 100%;}
-@media only screen and (min-width: 0px) {#distance {padding: 0px;}}
-@media only screen and (min-width: 1000px) {#distance {padding: 0px 0px 0px 150px;}}
+/*@media only screen and (min-width: 0px) {#distance {padding: 0px;}}
+@media only screen and (min-width: 1000px) {#distance {padding: 0px 0px 0px 150px;}}*/
 /*******************************************/
 @media only screen and (min-width: 700px) {
 	/*#right {display: none;}*/

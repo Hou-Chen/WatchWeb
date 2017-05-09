@@ -16,8 +16,7 @@
     /*height: 35px;*/
     line-height: 35px;
     /*border-left: 3px solid #df5a2e;*/
-    margin-left: 40px;
-    transition: all 0.2s;
+    margin-left: 33px;
 }
 #nav ul li a {
     color: rgba(0, 0, 0, 0.7);
@@ -38,4 +37,9 @@
 }*/
 #nav ul li ul li {
 	font-size: 18px;
+}
+#nav ul li ul li a:hover {
+    transition: 0.5s;
+    font-size: 23px;
+    color: rgba(0, 0, 0, 1);
 }}

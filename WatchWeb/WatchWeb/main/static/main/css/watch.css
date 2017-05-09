@@ -1,5 +1,5 @@
 body {
-	background-color: rgba(178, 232, 232, 0.59);
+	background-color: blanchedalmond;
 }
 #main {
     width: 100%;
@@ -36,6 +36,7 @@ a p {
     height: auto;
     border: 2px solid #ccc;
 }
-
-
-
+@media only screen and (min-width: 1000px) {.ex{margin:10px 40px 10px 10px;}}
+@media only screen and (min-width: 763px) and (max-width: 999px) {.ex{margin: 10px 5% 10px 7%;}}
+@media only screen and (min-width: 451px) and (max-width: 762px) {.ex{margin: 10px 3% 10px 10%;width: 30%;}}
+@media only screen and (min-width: 1px) and (max-width: 450px) {.ex{margin: 10px;width: 95%;}}

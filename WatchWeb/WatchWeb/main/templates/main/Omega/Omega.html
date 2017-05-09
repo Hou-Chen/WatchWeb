@@ -1,5 +1,13 @@
 {% extends "main/base.html" %}
 {% load staticfiles %}
-{% block heading %}{% endblock %}
+{% block heading %}<link rel=stylesheet href={% static 'main/css/watch.css' %}>{% endblock %}
 {% block content %}
+<div id="main">
+    <div class="ex">
+        <a href={% url 'main:Omega_0509' %}>
+            <img src={% static 'main/img/Omega/0509/a.jpg' %}>
+            <p>海馬洗油保養，重點是這只錶有磁性，需要退磁</p>
+        </a>
+    </div>
+</div>
 {% endblock %}

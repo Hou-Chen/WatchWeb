@@ -15,7 +15,7 @@
     }
 }
 @media only screen and (max-width: 699px) {#header p {display: none;}}
-@media only screen and (max-width: 330px) {#header h1 a {font-size: 24px;}}
+@media only screen and (max-width: 350px) {#header h1 a {font-size: 24px;}}
 </style>
     <head>
         <title>正時鐘錶維修中心</title>
@@ -39,8 +39,9 @@
             六(11:00am - 18:00pm)<br>
             地址：台北市萬華區大里街157號-15<br>
             Tel：0909-819-817</p>
-            <div class="before" style="transition:0.5s"></div>
-            <div class="nav">
+            <div class="before"></div>                     
+        </div>
+        <div class="nav">
             <ul>
                 <li><a href={% url 'main:email' %}>線上預約、回報</a></li>                
                 <li><a class="ja1" href="#">維修知識</a>
@@ -58,7 +59,7 @@
                         <li><a href={% url 'main:CITIZEN' %}>CITIZEN 星辰</a></li>
                         <li><a href={% url 'main:MIDO' %}>MIDO 美度</a></li>
                         <li><a href={% url 'main:TAGHeuer' %}>TAGHeuer 泰格豪雅</a></li>
-                        <li><a href={% url 'main:Omega' %}>Omega 亞米茄</a></li>
+                        <li><a href={% url 'main:Omega' %}>Omega 歐米茄</a></li>
                         <li><a href={% url 'main:LONGINES' %}>LONGINES 浪琴</a></li>
                         <li><a href={% url 'main:Fossil' %}>Fossil</a></li>
                         <li><a href={% url 'main:DanielWellington' %}>Daniel Wellington</a></li>
@@ -72,10 +73,9 @@
                 </ul>
             </div>            
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-        <script src={% static 'main/js/base.js' %}></script>         
-        </div> 
+        <script src={% static 'main/js/base1.js' %}></script> 
         <div class="row">
-            <div id="nav" class="col-4 col-m-1">
+            <div id="nav" class="col-6 col-m-1">
                 <ul>
                     <li><a href="#">維修知識</a>
                         <ul>
@@ -92,7 +92,7 @@
                             <li><a href={% url 'main:CITIZEN' %}>CITIZEN 星辰</a></li>
                             <li><a href={% url 'main:MIDO' %}>MIDO 美度</a></li>
                             <li><a href={% url 'main:TAGHeuer' %}>TAGHeuer 泰格豪雅</a></li>
-                            <li><a href={% url 'main:Omega' %}>Omega 亞米茄</a></li>
+                            <li><a href={% url 'main:Omega' %}>Omega 歐米茄</a></li>
                             <li><a href={% url 'main:LONGINES' %}>LONGINES 浪琴</a></li>
                             <li><a href={% url 'main:Fossil' %}>Fossil</a></li>
                             <li><a href={% url 'main:DanielWellington' %}>Daniel Wellington</a></li>
@@ -127,7 +127,7 @@
                             <li><a href={% url 'main:CITIZEN' %}>CITIZEN 星辰</a></li>
                             <li><a href={% url 'main:MIDO' %}>MIDO 美度</a></li>
                             <li><a href={% url 'main:TAGHeuer' %}>TAGHeuer 泰格豪雅</a></li>
-                            <li><a href={% url 'main:Omega' %}>Omega 亞米茄</a></li>
+                            <li><a href={% url 'main:Omega' %}>Omega 歐米茄</a></li>
                             <li><a href={% url 'main:LONGINES' %}>LONGINES 浪琴</a></li>
                             <li><a href={% url 'main:Fossil' %}>Fossil</a></li>
                             <li><a href={% url 'main:DanielWellington' %}>Daniel Wellington</a></li>
@@ -145,7 +145,7 @@
                 </nav>
                 </div>
             </div>
-            <div id="distance" class="col-16 col-m-11">
+            <div id="distance" class="col-14 col-m-11">
                 {% block content %}{% endblock %}
             </div>
         </div>

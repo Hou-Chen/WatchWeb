@@ -35,7 +35,7 @@
     }
     .nav li a {
         color: white;
-        padding-right: 47px;
+        padding-right: 87px;
     }
     .nav ul li {
         font-size: 19px;
@@ -50,7 +50,7 @@
         content: " - ";
         color: white;
     }
-    .ja1::after, .ja2::after {
+    /*.ja1::after, .ja2::after {
         content: url('../img/icon/right_white_24.svg');
         float: right;
         margin-right: 18px;
@@ -59,14 +59,14 @@
     }
     .ja11::after, .ja22::after {
         content: url('../img/icon/down_white_24.svg');
-    }
-    /*.ja1::after, .ja2::after {
+    }*/
+    .ja1::after, .ja2::after {
         content: attr(aftercontent);
         float: right;
         margin-right: 20px;
         font-size: 30px;
         color: white;
-    }*/
+    }
 }
 @media only screen and (min-width: 701px) {
     #right {display: none;}
