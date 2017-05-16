@@ -10,6 +10,7 @@ body {
     border: 1px solid #ccc;
     display: inline-block;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    transition: all 0.2s;
 }
 a {
     color: black;
@@ -27,15 +28,21 @@ a p {
 /************************************************/
 
 #content {
-	margin: 10px auto;
-	text-align: center;
-	width: 330px;
+    margin: 10px auto;
+    text-align: center;
+    width: 50%;	
+    transition: 0.2s;
 }
 #content p{	
-    max-width: 100%;
+    width: 100%;
     height: auto;
+    font-size: 18px;
     border: 2px solid #ccc;
 }
+#content p img {
+	width: 100%;
+}
+@media only screen and (max-width: 530px) {#content{width: 90%;}}
 @media only screen and (min-width: 1000px) {.ex{margin:10px 40px 10px 10px;}}
 @media only screen and (min-width: 763px) and (max-width: 999px) {.ex{margin: 10px 5% 10px 7%;}}
 @media only screen and (min-width: 451px) and (max-width: 762px) {.ex{margin: 10px 3% 10px 10%;width: 30%;}}

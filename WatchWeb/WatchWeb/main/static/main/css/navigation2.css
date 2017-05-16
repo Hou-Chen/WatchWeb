@@ -19,7 +19,7 @@
     }
     .nav {
         position: absolute;
-        top: 90px;
+        /*top: 90px;*/  
         width: 240px;
         left: -100%;        
         background: #2C333A;;
@@ -35,7 +35,6 @@
     }
     .nav li a {
         color: white;
-        padding-right: 87px;
     }
     .nav ul li {
         font-size: 19px;

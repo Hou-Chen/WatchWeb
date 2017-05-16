@@ -1,4 +1,5 @@
 /*screen >= 1000*/
+@import url('https://fonts.googleapis.com/css?family=Calligraffitti');
 @media only screen and (min-width: 1000px){
 .cennav {display: none;}
 #nav {
@@ -39,6 +40,7 @@
 	font-size: 18px;
 }
 #nav ul li ul li a:hover {
+	font-family: 'Calligraffitti', cursive;
     transition: 0.5s;
     font-size: 23px;
     color: rgba(0, 0, 0, 1);

@@ -5,9 +5,9 @@ from tkinter import *
 
 def send(request):
     if request.method == 'POST':
-        fromaddr = 'a40208s@gmail.com'
-        password = 'a941103s'
-        toaddrs = 'houchen691@gmail.com'        
+        fromaddr = 'watchwebservice@gmail.com'
+        password = 'watchwebservice0'
+        toaddrs = 'bear93@gmail.com'        
         msg = MIMEMultipart()
         msg['From'] = fromaddr
         msg['To'] = toaddrs
