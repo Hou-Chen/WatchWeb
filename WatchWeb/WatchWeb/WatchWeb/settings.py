@@ -23,9 +23,13 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = ')wth3=h1oo*er137a=6c_%if*j$qy%o+05gvplb*ay_f5ezui$'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+if 'DYNO' not in os.environ:
+    DEBUG = True
+else:
+    DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
+ 
 #EMAIL_HOST_PASSWORD = 'ohva kngw hcvt cfhp'
 # Application definition
 
@@ -74,16 +78,23 @@ WSGI_APPLICATION = 'WatchWeb.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/1.10/ref/settings/#databases
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'WatchWebDB',
-        'USER': 'gogo',
-        'PASSWORD': 'fafa',
-        'HOST': 'localhost',
-        'PORT': '',
+if DEBUG==True:
+    DATABASES = {
+        'default': {
+            'ENGINE': 'django.db.backends.postgresql_psycopg2',
+            'NAME': 'WatchWebDB',
+            'USER': 'gogo',
+            'PASSWORD': 'fafa',
+            'HOST': 'localhost',
+            'PORT': '',
+        }
     }
-}
+else: # Running on Heroku
+    # Parse database configuration from $DATABASE_URL
+    import dj_database_url
+    DATABASES = {'default':dj_database_url.config()}
+    # Honor the 'X-Forwarded-Proto' header for request.is_secure()
+    SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
 
 
 # Password validation
@@ -123,3 +134,12 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/1.10/howto/static-files/
 
 STATIC_URL = '/static/'
+
+ALLOWED_HOSTS = ['35.185.154.224']
+
+if DEBUG==False: # Running on Heroku
+    STATIC_ROOT = 'staticfiles'
+
+
+
+
