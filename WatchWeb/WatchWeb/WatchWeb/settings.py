@@ -135,7 +135,8 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
-ALLOWED_HOSTS = ['35.185.154.224']
+#ALLOWED_HOSTS = ['35.185.154.224']
+#ALLOWED_HOSTS = ['www.fixwatch.idv.tw']
 
 if DEBUG==False: # Running on Heroku
     STATIC_ROOT = 'staticfiles'

@@ -5,7 +5,6 @@
 	-moz-box-sizing: border-box;
 	-o-box-sizing: border-box;
 	box-sizing: border-box;	
-	/*border: 1px solid rgba(0, 0, 0, 0.3);*/
 }
 .row::after {
     content: "";
@@ -72,7 +71,6 @@ a {
     height: auto;
     min-height: 90px;
     background: rgba(59, 58, 54, 0.6);
-    /*background: #11A18A;*/
 }
 #header h1 a {
 	float: left;

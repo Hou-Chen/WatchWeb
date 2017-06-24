@@ -1,5 +1,5 @@
 var act1 = 1;
-var act2 = 1;
+//var act2 = 1;
 var act3 = 1;
 $(".before").click(function () {
 	$(".before").toggleClass('after');
@@ -11,7 +11,7 @@ $(".before").click(function () {
     	$('.nav').animate({left: '-100%'},1000);
         act1 = 1;
     }});
-    $(".ja1").click(function() {
+   /* $(".ja1").click(function() {
     	$(".ja1").toggleClass('ja11');  
         if(act2 == 1) {
         	$('.ju1').slideDown(500);
@@ -20,7 +20,7 @@ $(".before").click(function () {
         else {
         	$('.ju1').slideUp(500);
             act2 = 1;
-        }});
+        }});*/
     $(".ja2").click(function() {
     	$(".ja2").toggleClass('ja22');
         if(act3 == 1) {

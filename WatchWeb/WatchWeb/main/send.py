@@ -7,7 +7,7 @@ def send(request):
     if request.method == 'POST':
         fromaddr = 'watchwebservice@gmail.com'
         password = 'watchwebservice0'
-        toaddrs = 'bear93@gmail.com'        
+        toaddrs = 'houchen691@gmail.com'        
         msg = MIMEMultipart()
         msg['From'] = fromaddr
         msg['To'] = toaddrs

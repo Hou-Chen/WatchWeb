@@ -3,12 +3,6 @@ from main import send
 
 def main(request):
     return render(request, 'main/main.html')
-def related(request):
-    return render(request, 'main/related.html')
-def service(request):
-    return render(request, 'main/service.html')
-def tool(request):
-    return render(request, 'main/tool.html')
 def ARMANI(request):
     return render(request, 'main/ARMANI/ARMANI.html')
 def SEIKO(request):
@@ -33,6 +27,10 @@ def DanielWellington(request):
     return render(request, 'main/DanielWellington/DanielWellington.html')
 def ROLEX(request):
     return render(request, 'main/ROLEX/ROLEX.html')
+def ROLEX_0519(request):
+    return render(request, 'main/ROLEX/ROLEX_0519.html')
+def ROLEX_0520(request):
+    return render(request, 'main/ROLEX/ROLEX_0520.html')
 def ORIS(request):
     return render(request, 'main/ORIS/ORIS.html')                         
 def PANERAI(request):

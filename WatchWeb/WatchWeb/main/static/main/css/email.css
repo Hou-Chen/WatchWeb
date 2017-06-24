@@ -1,10 +1,5 @@
 body {
-    /*background: -webkit-linear-gradient(left top,#98dafc,#22264b);
-    background: -moz-linear-gradient(bottom right,#22264b,#98dafc);
-    background: -o-linear-gradient(bottom right,#98dafc,#22264b);
-    background: -linear-gradient(to bottom right,#98dafc,#22264b);*/
-    background-size: cover;
-    background-attachment: fixed;
+    background-color: blanchedalmond;
 }
 .main {
 	width: 550px;
@@ -30,7 +25,7 @@ body {
 	padding: 15px;
 	border: none;
 	margin-bottom: 10px;
-	background-color: lightgray;
+	background-color: rgba(255, 255, 255, 0.8);
     letter-spacing: 1px;
 	color: #000;
 	font-size: 1.3em;
@@ -40,7 +35,6 @@ body {
 	padding: 12px;
 	font-size: 1.3em;
 	border: none;
-	/*background-color: #00bfff;*/
 	background-color: #237793;
 	color: #fff;	
     letter-spacing: 3px;

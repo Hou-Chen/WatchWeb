@@ -1,5 +1,19 @@
 {% extends "main/base.html" %}
 {% load staticfiles %}
-{% block heading %}{% endblock %}
+{% block heading %}<link rel=stylesheet href={% static 'main/css/watch.css' %}>{% endblock %}
 {% block content %}
+<div id="main">
+    <div class="ex">
+        <a href={% url 'main:ROLEX_0519' %}>
+            <img src={% static 'main/img/ROLEX/0519/a.jpg' %}>
+            <p>這勞力士女錶銹的太嚴重了，要花不少錢來...</p>
+        </a>
+    </div>
+    <div class="ex">
+        <a href={% url 'main:ROLEX_0520' %}>
+            <img src={% static 'main/img/ROLEX/0520/a.jpg' %}>
+            <p>勞力士3135機芯，發條斷掉，更換新的發調</p>
+        </a>
+    </div>
+</div>
 {% endblock %}
